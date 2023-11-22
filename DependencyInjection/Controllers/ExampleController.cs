@@ -2,17 +2,17 @@
 
 namespace DependencyInjection.Controllers
 {
-    [ApiController]
-    [Route("[controller]")]
-    public class ExampleController : ControllerBase
-    {
-        [HttpGet]
-        [Route("time")]
-        public ActionResult GetTime()
-        {
-            var result = DateTime.Now;
-            return Ok(result);
-        }
+	[ApiController]
+	[Route("[controller]")]
+	public class ExampleController : ControllerBase
+	{
+		[HttpGet]
+		[Route("time")]
+		public ActionResult GetTime()
+		{
+			var result = DateTime.Now;
+			return Ok(result);
+		}
 
 		[HttpGet]
 		[Route("numbers")]
